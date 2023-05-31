@@ -1,1 +1,1 @@
-# capy-puzzle
+# Capy Puzzle

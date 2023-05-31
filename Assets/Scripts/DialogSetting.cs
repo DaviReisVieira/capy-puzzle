@@ -30,8 +30,7 @@ public class DialogSetting : Dialog
         this.language.text = LocalizationManager.Instance.getLanguageName();
         if (ChannelController.channel == 0)
         {
-            this.removeAds.SetActive(false);
-
+            this.removeAds.SetActive(true);
         }
         else if (ChannelController.channel == 1)
         {
