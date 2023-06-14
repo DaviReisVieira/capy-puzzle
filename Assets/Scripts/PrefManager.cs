@@ -34,4 +34,24 @@ public class PrefManager
         return PlayerPrefs.GetString("Localization_lan", string.Empty);
     }
 
+    public static void setCoin(int coin)
+    {
+        PlayerPrefs.SetInt("coin", coin);
+    }
+
+    public static int getCoin()
+    {
+        return PlayerPrefs.GetInt("coin", 0);
+    }
+
+    public static void setTimeGoldBeginTime()
+    {
+        PlayerPrefs.SetString("TimeGoldBeginTime", Util.GetCurrentTimeInDouble() + string.Empty);
+    }
+
+    public static double getTimeGoldBeginTime()
+    {
+        return double.Parse(PlayerPrefs.GetString("TimeGoldBeginTime", "0"));
+    }
+
 }

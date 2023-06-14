@@ -8,6 +8,8 @@ public class SoundManager : MonoBehaviour
     {
         button,
         popup,
+        coins,
+        rewardx3,
     }
 
     public static SoundManager Instance;
