@@ -6,4 +6,7 @@ public enum DialogType
     lotteryTripple,
     shop,
     Loading,
+    win,
+    lose,
+    collectStar,
 }

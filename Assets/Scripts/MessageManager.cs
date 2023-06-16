@@ -30,7 +30,8 @@ public class MessageManager
     public enum Event
     {
         STARS_UPDATE,
-        COIN_UPDATE
+        COIN_UPDATE,
+        NEW_LEVEL_PASSED
     }
 
     public static MessageManager instance = new MessageManager();
@@ -40,7 +41,7 @@ public class MessageManager
     public MessageManager()
     {
         this._msgMap = new List<Delegate>();
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 3; i++)
         {
             this._msgMap.Add(null);
         }

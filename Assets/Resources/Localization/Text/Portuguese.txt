@@ -1,3 +1,4 @@
+Loading|Loading...
 HOME|INÍCIO
 SOUND|EFEITOS SONOROS
 MUSIC|MÚSICA
@@ -6,3 +7,9 @@ FREE|LIVRE
 Claim_normal|COBRAR
 Claim_daily|PRÊMIO
 Get_for_free|PEGUE DE GRAÇA
+user_guide_1|Toque no objeto <color=#FF0000>vermelho</color> para remover
+user_guide_2|Jogue a capivara na água antes que ela^<color=#FF0000> passe mal!</color>
+useless_hint|Apenas objetos <color=#FF0000>vermelhos</color> pode ser clicados
+NEXT|PRÓXIMO
+FREE_PRIZE|PRÊMIO^GRATUITO
+MISSON_FAILED|MISSÃO FALHOU

@@ -10,6 +10,13 @@ public class SoundManager : MonoBehaviour
         popup,
         coins,
         rewardx3,
+        jumpinwater,
+        redClick,
+        ballon,
+        win,
+        star,
+        fail,
+
     }
 
     public static SoundManager Instance;

@@ -48,7 +48,6 @@ public class SceneAnimCoverManager : MonoBehaviour
     public void loadScene(string sceneName)
     {
         Debug.Log("loadScene: " + sceneName);
-        Debug.Log(this.isAnimating);
         if (this.isAnimating)
         {
             return;

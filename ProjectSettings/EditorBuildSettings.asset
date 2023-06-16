@@ -10,7 +10,7 @@ EditorBuildSettings:
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
     path: Assets/Scene/Game/SWING/SWING_1.unity
-    guid: 6cc00a714f4376847af9d73249185ee3
+    guid: efd24cebf1c75a44d82906d187f3d88b
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 39447e9466a7114429fdd6ca051e1c9f, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 2f0387d0bd6aa75469515d4cf02cadd7, type: 2}

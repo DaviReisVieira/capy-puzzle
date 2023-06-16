@@ -87,4 +87,69 @@ public class PrefManager
         return PlayerPrefs.GetInt("unlockLevel_" + sectionIndex, 0);
     }
 
+    // level design
+    public static void setHintUsed()
+    {
+        PlayerPrefs.SetInt("HintUsed", 1);
+    }
+
+    public static void setCollectStarShowCount(int count)
+    {
+        PlayerPrefs.SetInt("CollectStarShowCount_" + Util.GetCurrentTimeInDays(), count);
+    }
+
+    public static int getCollectStarShowCount()
+    {
+        return PlayerPrefs.GetInt("CollectStarShowCount_" + Util.GetCurrentTimeInDays(), 0);
+    }
+
+    public static void setPromoteManUnlocked()
+    {
+        PlayerPrefs.SetInt("PromoteManUnlocked", 1);
+    }
+
+    public static bool isPromoteManUnlocked()
+    {
+        return PlayerPrefs.GetInt("PromoteManUnlocked", 0) != 0;
+    }
+
+    public static void setLotteryUsed()
+    {
+        PlayerPrefs.SetInt("LotteryUsed", 1);
+    }
+
+    public static bool isLotteryUsed()
+    {
+        return PlayerPrefs.GetInt("LotteryUsed", 0) != 0;
+    }
+
+    public static void setLevelPassed(int passedLevels)
+    {
+        PlayerPrefs.SetInt("LevelPassed", passedLevels);
+    }
+
+    public static int getLevelPassed()
+    {
+        return PlayerPrefs.GetInt("LevelPassed", 0);
+    }
+
+    public static void setWinHandShowed()
+    {
+        PlayerPrefs.SetInt("WinHandShowed", 1);
+    }
+
+    public static bool isWinHandShowed()
+    {
+        return PlayerPrefs.GetInt("WinHandShowed", 0) != 0;
+    }
+
+    public static void setManPromoteShowCount(int count)
+    {
+        PlayerPrefs.SetInt("ManPromoteShowCount", count);
+    }
+
+    public static int getManPromoteShowCount()
+    {
+        return PlayerPrefs.GetInt("ManPromoteShowCount", 0);
+    }
 }
