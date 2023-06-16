@@ -54,4 +54,37 @@ public class PrefManager
         return double.Parse(PlayerPrefs.GetString("TimeGoldBeginTime", "0"));
     }
 
+    // game level managment
+    public static void setStar(int sectionIndex, int level, int star)
+    {
+        PlayerPrefs.SetInt(string.Concat(new object[]
+        {
+            "levelStar_",
+            sectionIndex,
+            "_",
+            level
+        }), star);
+    }
+
+    public static int getStar(int sectionIndex, int level)
+    {
+        return PlayerPrefs.GetInt(string.Concat(new object[]
+        {
+            "levelStar_",
+            sectionIndex,
+            "_",
+            level
+        }), 0);
+    }
+
+    public static void setUnlockLevel(int sectionIndex, int level)
+    {
+        PlayerPrefs.SetInt("unlockLevel_" + sectionIndex, level);
+    }
+
+    public static int getUnlockLevel(int sectionIndex)
+    {
+        return PlayerPrefs.GetInt("unlockLevel_" + sectionIndex, 0);
+    }
+
 }

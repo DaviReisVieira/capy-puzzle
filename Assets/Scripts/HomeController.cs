@@ -20,7 +20,7 @@ public class HomeController : BaseController
     public void onPlay()
     {
         Debug.Log("onPlay");
-        // LevelManager.continueGamePlay();
+        LevelManager.continueGamePlay();
     }
 
     public void onCoinClick()

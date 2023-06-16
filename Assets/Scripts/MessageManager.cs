@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+using UnityEngine;
 public class MessageManager
 {
     public delegate void funsig();
@@ -29,7 +29,8 @@ public class MessageManager
 
     public enum Event
     {
-        COIN_UPDATE,
+        STARS_UPDATE,
+        COIN_UPDATE
     }
 
     public static MessageManager instance = new MessageManager();
@@ -39,7 +40,7 @@ public class MessageManager
     public MessageManager()
     {
         this._msgMap = new List<Delegate>();
-        for (int i = 0; i < 1; i++)
+        for (int i = 0; i < 2; i++)
         {
             this._msgMap.Add(null);
         }
