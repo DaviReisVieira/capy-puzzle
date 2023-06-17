@@ -2986,7 +2986,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f3320780be124d8d89cc05346249f21d, type: 2}
+  - {fileID: 2100000, guid: 0843143c9bf1a1449bb33a573cddf6bd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4243,7 +4243,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5650389035163651667}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: DialogWin, Assembly-CSharp
         m_MethodName: onVideoClick
         m_Mode: 1
         m_Arguments:
@@ -7487,7 +7487,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f3320780be124d8d89cc05346249f21d, type: 2}
+  - {fileID: 2100000, guid: 0843143c9bf1a1449bb33a573cddf6bd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8868,7 +8868,10 @@ MonoBehaviour:
   from: 
   title: {fileID: 5650389035163651341}
   starCountTxt: {fileID: 5650389035163651991}
-  stars: []
+  stars:
+  - {fileID: 5650389035163711691}
+  - {fileID: 5650389035163711298}
+  - {fileID: 5650389035163711721}
   videoBtn: {fileID: 5650389035163711265}
   timeGold: {fileID: 5650389035163711452}
   manBtn: {fileID: 5650389035163711400}

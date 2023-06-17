@@ -1,11 +1,9 @@
-//using DAP;
 using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-//using Umeng;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -87,7 +85,6 @@ public class DialogWin : Dialog
                     this._i___1 = 0;
                     break;
                 case 1u:
-                    this._this.stars[this._i___1].transform.DOScale(1f, 0.1f);
                     this._current = new WaitForSecondsRealtime(0.1f);
                     if (!this._disposing)
                     {
@@ -98,7 +95,6 @@ public class DialogWin : Dialog
                     this._i___1++;
                     break;
                 case 3u:
-                    this._this.videoBtn.transform.DOScale(1f, 0.083f);
                     this._current = new WaitForSecondsRealtime(0.083f);
                     if (!this._disposing)
                     {
@@ -119,16 +115,8 @@ public class DialogWin : Dialog
                     return true;
                 case 5u:
                     this._btnShowMan___0 = this._this.manBtn;
-                    // if (PrefManager.getManPromoteShowCount() > 0 && ManStyleManager.isHaveManPromote())
-                    // {
-                    //     this._btnShowMan___0 = this._this.promoteBtn;
-                    // }
                     this._btnShowMan___0.SetActive(true);
                     this._this.timeGold.SetActive(true);
-                    this._btnShowMan___0.transform.localScale = Vector3.zero;
-                    this._this.timeGold.transform.localScale = Vector3.zero;
-                    this._btnShowMan___0.transform.DOScale(1.2f, 0.12f);
-                    this._this.timeGold.transform.DOScale(1.2f, 0.12f);
                     this._current = new WaitForSecondsRealtime(0.12f);
                     if (!this._disposing)
                     {
@@ -136,8 +124,6 @@ public class DialogWin : Dialog
                     }
                     return true;
                 case 6u:
-                    this._btnShowMan___0.transform.DOScale(1f, 0.083f);
-                    this._this.timeGold.transform.DOScale(1f, 0.083f);
                     this._current = new WaitForSecondsRealtime(0.083f);
                     if (!this._disposing)
                     {
@@ -154,20 +140,15 @@ public class DialogWin : Dialog
                 case 8u:
                     if (PrefManager.getLevelPassed() >= RemoteConfig.Instance.fiveStarRateLevel && GameController.starCount >= 3 && !this._interstitialShowed___0)
                     {
-                        //AppRater.ShowRatingDialog();
+                        // PRECISO DO DAP QUE TÁ DANDO ERRO
+                        // AppRater.ShowRatingDialog();
 
-                        // Application.OpenURL("https://apps.apple.com/vn/app/zombie-street-trigger/id1140797872?l=vi");
+                        // Application.OpenURL("https://davirvs.com.br/");
 
                     }
                     this._this.nextBtn.SetActive(true);
                     this._this.retryBtn.SetActive(true);
                     this._this.levelBtn.SetActive(true);
-                    this._this.nextBtn.transform.localScale = Vector3.zero;
-                    this._this.nextBtn.transform.DOScale(1.2f, 0.12f);
-                    this._this.retryBtn.transform.localScale = Vector3.zero;
-                    this._this.retryBtn.transform.DOScale(1.2f, 0.12f);
-                    this._this.levelBtn.transform.localScale = Vector3.zero;
-                    this._this.levelBtn.transform.DOScale(1.2f, 0.12f);
                     this._current = new WaitForSecondsRealtime(0.12f);
                     if (!this._disposing)
                     {
@@ -175,9 +156,6 @@ public class DialogWin : Dialog
                     }
                     return true;
                 case 9u:
-                    this._this.nextBtn.transform.DOScale(1f, 0.083f);
-                    this._this.retryBtn.transform.DOScale(1f, 0.083f);
-                    this._this.levelBtn.transform.DOScale(1f, 0.083f);
                     this._current = new WaitForSecondsRealtime(0.083f);
                     if (!this._disposing)
                     {
@@ -195,8 +173,6 @@ public class DialogWin : Dialog
                 //this._interstitialShowed___0 = this._this.showInterstitial();
                 // AdsControl.Instance.showAds();
                 this._this.videoBtn.SetActive(true);
-                this._this.videoBtn.transform.localScale = Vector3.zero;
-                this._this.videoBtn.transform.DOScale(1.2f, 0.12f);
                 this._current = new WaitForSecondsRealtime(0.12f);
                 if (!this._disposing)
                 {
@@ -206,8 +182,6 @@ public class DialogWin : Dialog
             }
             SoundManager.Instance.playSound(SoundManager.Sound.star);
             this._this.stars[this._i___1].SetActive(true);
-            this._this.stars[this._i___1].transform.localScale = Vector3.zero;
-            this._this.stars[this._i___1].transform.DOScale(1.4f, 0.2f);
             this._current = new WaitForSecondsRealtime(0.2f);
             if (!this._disposing)
             {
@@ -265,7 +239,6 @@ public class DialogWin : Dialog
             switch (num)
             {
                 case 0u:
-                    this._this.videoBtn.transform.DOScale(0.8f, 0.1f);
                     this._current = new WaitForSecondsRealtime(0.1f);
                     if (!this._disposing)
                     {
@@ -273,7 +246,6 @@ public class DialogWin : Dialog
                     }
                     return true;
                 case 1u:
-                    this._this.videoBtn.transform.DOScale(1.1f, 0.1f);
                     this._current = new WaitForSecondsRealtime(0.1f);
                     if (!this._disposing)
                     {
@@ -281,7 +253,6 @@ public class DialogWin : Dialog
                     }
                     return true;
                 case 2u:
-                    this._this.videoBtn.transform.DOScale(1f, 0.067f);
                     this._current = new WaitForSecondsRealtime(0.067f);
                     if (!this._disposing)
                     {
@@ -341,20 +312,16 @@ public class DialogWin : Dialog
     protected override void Awake()
     {
         base.Awake();
-        //AdsManager expr_0B = AdsManager.Instance;
-        // AdsControl.Instance.onRewardVideoComplete = (Action<string>)Delegate.Combine(AdsControl.Instance.onRewardVideoComplete, new Action<string>(this.onRewardVideoComplete));
+        AdsInitializer.Instance.onRewardVideoComplete = (Action<string>)Delegate.Combine(AdsInitializer.Instance.onRewardVideoComplete, new Action<string>(this.onRewardVideoComplete));
         SceneAnimCoverManager expr_31 = SceneAnimCoverManager.Instance;
         expr_31.actionBeforeLoadScene = (Action)Delegate.Combine(expr_31.actionBeforeLoadScene, new Action(this.Close));
-        // MessageManager.instance.Subscribe(MessageManager.Event.MAN_PROMOTE_COIN_UNLOCK, new MessageManager.funsig(this.onPromoteManCoinUnlock));
     }
 
     private void OnDestroy()
     {
-        //AdsManager expr_05 = AdsManager.Instance;
-        // AdsControl.Instance.onRewardVideoComplete = (Action<string>)Delegate.Remove(AdsControl.Instance.onRewardVideoComplete, new Action<string>(this.onRewardVideoComplete));
+        AdsInitializer.Instance.onRewardVideoComplete = (Action<string>)Delegate.Remove(AdsInitializer.Instance.onRewardVideoComplete, new Action<string>(this.onRewardVideoComplete));
         SceneAnimCoverManager expr_2B = SceneAnimCoverManager.Instance;
         expr_2B.actionBeforeLoadScene = (Action)Delegate.Remove(expr_2B.actionBeforeLoadScene, new Action(this.Close));
-        // MessageManager.instance.Unsubscribe(MessageManager.Event.MAN_PROMOTE_COIN_UNLOCK, new MessageManager.funsig(this.onPromoteManCoinUnlock));
     }
 
     protected override void Start()
@@ -419,21 +386,7 @@ public class DialogWin : Dialog
 
     public void onVideoClick()
     {
-        this.isVideoClicked = true;
-        if (RemoteConfig.Instance.freePrize_status == 0)
-        {
-            if (!PrefManager.isLotteryUsed())
-            {
-                PrefManager.setLotteryUsed();
-                this.adIcon.SetActive(true);
-                this.btnVideo.enabled = true;
-                this.onRewardVideoComplete("Win");
-            }
-        }
-        else
-        {
-            this.onRewardVideoComplete("Win");
-        }
+        AdsInitializer.Instance.LoadRewardedAd("Win");
     }
 
     private bool showInterstitial()
@@ -476,12 +429,8 @@ public class DialogWin : Dialog
     {
         if (from == "Win")
         {
-            // DialogController.instance.ShowDialog(DialogType.lottery, DialogShow.OVER_CURRENT, string.Empty);
+            int num = UnityEngine.Random.Range(100, 200);
+            Coins.updateCoin(num, "shopVideo");
         }
-    }
-
-    private void onPromoteManCoinUnlock()
-    {
-        this.manBtn.SetActive(true);
     }
 }

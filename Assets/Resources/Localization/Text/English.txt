@@ -13,3 +13,4 @@ useless_hint|Only <color=#FF0000>red</color> stuff can be removed
 NEXT|NEXT
 FREE_PRIZE|FREE^PRIZE
 MISSON_FAILED|MISSON FAILED
+time|Time:{0}s

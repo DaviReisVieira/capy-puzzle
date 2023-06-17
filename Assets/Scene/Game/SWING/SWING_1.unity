@@ -3628,9 +3628,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb6157d7a2f4d294ab5fded26a7f29a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Time1: 0
-  Time2: 0
-  Time3: 0
+  Time1: 2
+  Time2: 2
+  Time3: 15
 --- !u!114 &1789899403527812843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4233,7 +4233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   head: {fileID: 1789899403527812607}
   link: {fileID: 1789899403527812556}
-  smokeWaterParticle: {fileID: 0}
+  smokeWaterParticle: {fileID: 1789899403527812583, guid: 56b2edc1ee0e3374b8dd2517ef6d8725, type: 3}
 --- !u!114 &1789899403527812883
 MonoBehaviour:
   m_ObjectHideFlags: 0

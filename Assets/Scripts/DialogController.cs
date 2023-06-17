@@ -76,7 +76,6 @@ public class DialogController : MonoBehaviour
 
     public Dialog GetDialog(DialogType type, string from = "")
     {
-        Debug.Log("DialogType: " + type + " from: " + from);
         Dialog dialog = this.baseDialogs[(int)type];
         dialog.dialogType = type;
         dialog.from = from;

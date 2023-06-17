@@ -13,3 +13,4 @@ useless_hint|Apenas objetos <color=#FF0000>vermelhos</color> pode ser clicados
 NEXT|PRÓXIMO
 FREE_PRIZE|PRÊMIO^GRATUITO
 MISSON_FAILED|MISSÃO FALHOU
+time|Tempo:{0}s

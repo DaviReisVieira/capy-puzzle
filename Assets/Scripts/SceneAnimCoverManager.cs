@@ -47,6 +47,7 @@ public class SceneAnimCoverManager : MonoBehaviour
 
     public void loadScene(string sceneName)
     {
+        sceneName = "SWING_1";
         Debug.Log("loadScene: " + sceneName);
         if (this.isAnimating)
         {

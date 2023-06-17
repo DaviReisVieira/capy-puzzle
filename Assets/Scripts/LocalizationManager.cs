@@ -29,7 +29,6 @@ public class LocalizationManager
 
     public string getLanguageName()
     {
-        Debug.Log("getLanguageName: " + this.languageName[this.currentLan]);
         return this.languageName[this.currentLan];
     }
 
