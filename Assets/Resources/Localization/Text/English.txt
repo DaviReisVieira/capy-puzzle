@@ -8,9 +8,10 @@ Claim_normal|CLAIM
 Claim_daily|REWARD
 Get_for_free|GET FOR FREE
 user_guide_1|Tap <color=#FF0000>red</color> stuff to remove itself
-user_guide_2|Throw sparkman into the water before^<color=#FF0000>explode</color> to complete a level
+user_guide_2|Throw capybara into the water before^<color=#FF0000>explode</color> to complete a level
 useless_hint|Only <color=#FF0000>red</color> stuff can be removed
 NEXT|NEXT
 FREE_PRIZE|FREE^PRIZE
 MISSON_FAILED|MISSON FAILED
 time|Time:{0}s
+LEVEL_dialog_title|Level {0}

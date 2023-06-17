@@ -93,40 +93,6 @@ public class GameController : BaseController
         this.sparkInitPos = this.spark.transform.position;
         this.timeUsed = 0f;
         //GA.StartLevel(LevelManager.getAnalyticLevelName());
-        if (!this.showPromoteMan())
-        {
-            // if (!ManUnlockTipManager.instance.showManUnlockTip())
-            // {
-            // 	if (PrefManager.getLevelPassed() >= 2 && DialogDailyReward.isShouldShow())
-            // 	{
-            // 		DialogController.instance.ShowDialog(DialogType.dailyReward, DialogShow.OVER_CURRENT, string.Empty);
-            // 	}
-            // 	else if (UnityEngine.Object.FindObjectOfType<HintHelpter>().isInHint && !PrefManager.isHintDesShowed())
-            // 	{
-            // 		PrefManager.setHintDesShowed();
-            // 		DialogController.instance.ShowDialog(DialogType.hintDes, DialogShow.OVER_CURRENT, string.Empty);
-            // 	}
-            // }
-        }
-    }
-
-    private bool showPromoteMan()
-    {
-        // if (!ManStyleManager.isHaveManPromote())
-        // {
-        //     return false;
-        // }
-        // for (int i = 0; i < RemoteConfig.Instance.promote_man_level.Length; i++)
-        // {
-        //     int num = LevelManager.getLevelCountBeforeSection(LevelManager.sectionIndex) + LevelManager.levelIndex;
-        //     if (num == RemoteConfig.Instance.promote_man_level[i] && PrefManager.getManPromoteShowCount() == i)
-        //     {
-        //         PrefManager.setManPromoteShowCount(PrefManager.getManPromoteShowCount() + 1);
-        //         DialogController.instance.ShowDialog(DialogType.limitedSkin, DialogShow.OVER_CURRENT, "Auto");
-        //         return true;
-        //     }
-        // }
-        return false;
     }
 
     public void updateTime(float timeUsed)

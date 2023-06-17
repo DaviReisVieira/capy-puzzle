@@ -3615,7 +3615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigid: []
   clickableCount: 1
-  checkManInScreen: 1
+  checkManInScreen: 0
 --- !u!114 &1789899403527812842
 MonoBehaviour:
   m_ObjectHideFlags: 0

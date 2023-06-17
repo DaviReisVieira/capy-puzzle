@@ -1,4 +1,4 @@
-Loading|Loading...
+Loading|Carregando...
 HOME|INÍCIO
 SOUND|EFEITOS SONOROS
 MUSIC|MÚSICA
@@ -12,5 +12,6 @@ user_guide_2|Jogue a capivara na água antes que ela^<color=#FF0000> passe mal!<
 useless_hint|Apenas objetos <color=#FF0000>vermelhos</color> pode ser clicados
 NEXT|PRÓXIMO
 FREE_PRIZE|PRÊMIO^GRATUITO
-MISSON_FAILED|MISSÃO FALHOU
+MISSON_FAILED|VOCÊ FALHOU
 time|Tempo:{0}s
+LEVEL_dialog_title|Nível {0}
