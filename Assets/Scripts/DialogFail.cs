@@ -14,8 +14,6 @@ public class DialogFail : Dialog
 
     public ButtonVideo btnVideo;
 
-    public GameObject hand;
-
     private bool isVideoClicked;
 
     protected override void Awake()
@@ -42,11 +40,6 @@ public class DialogFail : Dialog
         bool flag = PrefManager.isLotteryUsed() && RemoteConfig.Instance.freePrize_status == 0;
         this.adIcon.SetActive(flag);
         this.btnVideo.enabled = flag;
-        if (!PrefManager.isWinHandShowed())
-        {
-            this.hand.SetActive(true);
-            PrefManager.setWinHandShowed();
-        }
 
         SoundManager.Instance.playSound(SoundManager.Sound.fail);
         Timer.Register(0.1f, delegate
@@ -90,13 +83,11 @@ public class DialogFail : Dialog
                 PrefManager.setLotteryUsed();
                 this.adIcon.SetActive(true);
                 this.btnVideo.enabled = true;
-                this.hand.SetActive(false);
                 this.onRewardVideoComplete("Win");
             }
         }
         else
         {
-            this.hand.SetActive(false);
             this.onRewardVideoComplete("Fail");
         }
     }

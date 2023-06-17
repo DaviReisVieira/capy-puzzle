@@ -1,1 +1,1 @@
-{"unlockStarCount":0,"name":"SWING","sceneName":[1,2,4,11,8,6,5,9,3,10]}
+{"unlockStarCount":0,"name":"SWING","sceneName":[1,2,3]}
