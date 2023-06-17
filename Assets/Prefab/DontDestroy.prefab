@@ -320,7 +320,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1989209230683719034, guid: eb38c2b2876da104f9ff804fab66ab32, type: 3}
       propertyPath: _testMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2419997330341111767, guid: eb38c2b2876da104f9ff804fab66ab32, type: 3}
       propertyPath: m_Name
