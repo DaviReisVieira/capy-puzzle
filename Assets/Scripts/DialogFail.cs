@@ -21,16 +21,14 @@ public class DialogFail : Dialog
     protected override void Awake()
     {
         base.Awake();
-        //AdsManager expr_0B = AdsManager.Instance;
-        // AdsControl.Instance.onRewardVideoComplete = (Action<string>)Delegate.Combine(AdsControl.Instance.onRewardVideoComplete, new Action<string>(this.onRewardVideoComplete));
+        AdsInitializer.Instance.onRewardVideoComplete = (Action<string>)Delegate.Combine(AdsInitializer.Instance.onRewardVideoComplete, new Action<string>(this.onRewardVideoComplete));
         SceneAnimCoverManager expr_31 = SceneAnimCoverManager.Instance;
         expr_31.actionBeforeLoadScene = (Action)Delegate.Combine(expr_31.actionBeforeLoadScene, new Action(this.Close));
     }
 
     private void OnDestroy()
     {
-        //AdsManager expr_05 = AdsManager.Instance;
-        // AdsControl.Instance.onRewardVideoComplete = (Action<string>)Delegate.Remove(AdsControl.Instance.onRewardVideoComplete, new Action<string>(this.onRewardVideoComplete));
+        AdsInitializer.Instance.onRewardVideoComplete = (Action<string>)Delegate.Remove(AdsInitializer.Instance.onRewardVideoComplete, new Action<string>(this.onRewardVideoComplete));
         SceneAnimCoverManager expr_2B = SceneAnimCoverManager.Instance;
         expr_2B.actionBeforeLoadScene = (Action)Delegate.Remove(expr_2B.actionBeforeLoadScene, new Action(this.Close));
     }
@@ -62,9 +60,7 @@ public class DialogFail : Dialog
         if (this.shouldShowInterstital())
         {
             DialogWin.showTimes = 0;
-            //bool flag = (float)(Util.GetCurrentTime() - AdsManager.Instance.lastInterstitialShowTime) >= RemoteConfig.Instance.interstitial_time_interval;
-            //string condition = (!flag) ? "time" : "level";
-            // AdsControl.Instance.showAds();
+            AdsInitializer.Instance.LoadRewardedAd("Win");
             return true;
         }
         return false;
@@ -80,13 +76,6 @@ public class DialogFail : Dialog
         {
             return false;
         }
-
-        // if (AdsControl.Instance.GetInterstitalAvailable())
-        // {
-        // 	return true;
-        // }
-
-
 
         return false;
     }
@@ -132,7 +121,6 @@ public class DialogFail : Dialog
     {
         if (from == "Fail")
         {
-            // DialogController.instance.ShowDialog(DialogType.lottery, DialogShow.OVER_CURRENT, string.Empty);
         }
     }
 }

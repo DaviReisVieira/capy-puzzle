@@ -22,6 +22,7 @@ public class FailDetector : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log("FailDetector.Update");
         if (!this.isConfirming && this.isFail())
         {
             this.isConfirming = true;
@@ -42,6 +43,7 @@ public class FailDetector : MonoBehaviour
 
     public virtual bool isFail()
     {
+        Debug.Log("FailDetector.isFail");
         if (this.clickableCount > 0)
         {
             return false;
@@ -60,6 +62,9 @@ public class FailDetector : MonoBehaviour
 
     public static bool isMoving(Rigidbody2D rb)
     {
+        Debug.Log("FailDetector.isMoving");
+        Debug.Log(rb.velocity.magnitude);
+        Debug.Log(Mathf.Abs(rb.angularVelocity));
         return rb.velocity.magnitude >= 0.1f || Mathf.Abs(rb.angularVelocity) >= 5f;
     }
 

@@ -7,12 +7,12 @@ public class ManSkin : MonoBehaviour
 
     private void Awake()
     {
-        // MessageManager.instance.Subscribe(MessageManager.Event.MAN_CHANGE, new MessageManager.funsig(this.onManChange));
+        MessageManager.instance.Subscribe(MessageManager.Event.MAN_CHANGE, new MessageManager.funsig(this.onManChange));
     }
 
     private void OnDestroy()
     {
-        // MessageManager.instance.Unsubscribe(MessageManager.Event.MAN_CHANGE, new MessageManager.funsig(this.onManChange));
+        MessageManager.instance.Unsubscribe(MessageManager.Event.MAN_CHANGE, new MessageManager.funsig(this.onManChange));
     }
 
     private void Start()

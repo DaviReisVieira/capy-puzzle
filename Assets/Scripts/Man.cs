@@ -71,17 +71,11 @@ public class Man : MonoBehaviour
     {
         this.tweener.Kill(false);
         // SoundManager.Instance.playSound(SoundManager.Sound.boom);
-        this.explodeBody();
         Water water = UnityEngine.Object.FindObjectOfType<Water>();
         if (water != null)
         {
             water.onFail();
         }
-        // ManHead manHead = UnityEngine.Object.FindObjectOfType<ManHead>();
-        // if (manHead != null)
-        // {
-        // 	manHead.onFail();
-        // }
         this.controller.onFail();
     }
 
@@ -93,24 +87,6 @@ public class Man : MonoBehaviour
             if (component != null)
             {
                 component.breakForce = 1000000f;
-            }
-        }
-    }
-
-    private void explodeBody()
-    {
-        for (int i = 0; i < base.transform.childCount; i++)
-        {
-            Transform child = base.transform.GetChild(i);
-            HingeJoint2D component = child.GetComponent<HingeJoint2D>();
-            if (component != null)
-            {
-                component.enabled = false;
-            }
-            Rigidbody2D component2 = child.GetComponent<Rigidbody2D>();
-            if (component2 != null)
-            {
-                component2.sharedMaterial = null;
             }
         }
     }

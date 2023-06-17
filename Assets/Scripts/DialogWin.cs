@@ -170,8 +170,8 @@ public class DialogWin : Dialog
             }
             if (this._i___1 >= GameController.starCount)
             {
-                //this._interstitialShowed___0 = this._this.showInterstitial();
-                // AdsControl.Instance.showAds();
+                this._interstitialShowed___0 = this._this.showInterstitial();
+                AdsInitializer.Instance.LoadRewardedAd("Win");
                 this._this.videoBtn.SetActive(true);
                 this._current = new WaitForSecondsRealtime(0.12f);
                 if (!this._disposing)
@@ -338,8 +338,6 @@ public class DialogWin : Dialog
             this.manEffects[i].SetActive(i == num2);
         }
         DialogWin.showTimes++;
-        //AdsManager.Instance.loadInterstitial();
-        // AdsControl.Instance.ShowBanner();
         base.StartCoroutine(this.init());
         SoundManager.Instance.playSound(SoundManager.Sound.win);
 
@@ -387,6 +385,7 @@ public class DialogWin : Dialog
     public void onVideoClick()
     {
         AdsInitializer.Instance.LoadRewardedAd("Win");
+        this.videoBtn.SetActive(false);
     }
 
     private bool showInterstitial()
@@ -394,11 +393,7 @@ public class DialogWin : Dialog
         if (this.shouldShowInterstital())
         {
             DialogWin.showTimes = 0;
-            //bool flag = (float)(Util.GetCurrentTime() - AdsManager.Instance.lastInterstitialShowTime) >= RemoteConfig.Instance.interstitial_time_interval;
-            //	string text = (!flag) ? "time" : "level";
-            //AdsManager arg_51_0 = AdsManager.Instance;
-            //	string condition = text;
-            // AdsControl.Instance.showAds();
+            AdsInitializer.Instance.LoadRewardedAd("Win");
             return true;
         }
         return false;
@@ -414,13 +409,6 @@ public class DialogWin : Dialog
         {
             return false;
         }
-
-        // if (AdsControl.Instance.GetInterstitalAvailable())
-        // {
-        // 	return true;
-        // }
-
-
 
         return false;
     }

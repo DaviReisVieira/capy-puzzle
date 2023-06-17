@@ -31,7 +31,8 @@ public class MessageManager
     {
         STARS_UPDATE,
         COIN_UPDATE,
-        NEW_LEVEL_PASSED
+        NEW_LEVEL_PASSED,
+        MAN_CHANGE
     }
 
     public static MessageManager instance = new MessageManager();
@@ -41,7 +42,7 @@ public class MessageManager
     public MessageManager()
     {
         this._msgMap = new List<Delegate>();
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 4; i++)
         {
             this._msgMap.Add(null);
         }
