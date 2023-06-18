@@ -4,10 +4,10 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class LineLayer : MonoBehaviour
 {
-	public int sortingOrder;
+    public int sortingOrder;
 
-	private void Start()
-	{
-		base.GetComponent<LineRenderer>().sortingOrder = this.sortingOrder;
-	}
+    private void Start()
+    {
+        base.GetComponent<LineRenderer>().sortingOrder = this.sortingOrder;
+    }
 }
