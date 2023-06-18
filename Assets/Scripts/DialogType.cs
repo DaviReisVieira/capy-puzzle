@@ -9,4 +9,5 @@ public enum DialogType
     win,
     lose,
     collectStar,
+    pause
 }
