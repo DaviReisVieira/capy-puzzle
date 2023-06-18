@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scene/Game/SWING/SWING_8.unity
     guid: d10fc20029778574d868e273a31b09da
   - enabled: 1
-    path: Assets/Scene/Game/SWING/SWING_10.unity
+    path: Assets/Scene/Game/SWING/SWING_9.unity
     guid: 4283d0a7f7a4fc942b52cdea65daf201
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 39447e9466a7114429fdd6ca051e1c9f, type: 2}
