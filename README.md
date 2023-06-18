@@ -4,7 +4,7 @@ Welcome to the exciting world of Capy Puzzle, a captivating game that will put y
 
 As you progress through the game, the puzzles become increasingly thought-provoking. From cutting ropes to moving objects, every puzzle is a unique challenge that requires both logic and creativity to conquer.
 
-[WhatsApp Image 2023-06-17 at 22 38 31](https://github.com/DaviReisVieira/capy-puzzle/assets/62949391/8fda3d11-e721-4ce3-be68-ec24c561581f)
+![WhatsApp Image 2023-06-17 at 22 38 31](https://github.com/DaviReisVieira/capy-puzzle/assets/62949391/f8bd3d1f-0318-4be7-927f-1170c6507e42)
 
 Capy Puzzle offers a user-friendly interface that allows players of all ages and skill levels to dive right into the action. The intuitive controls make it easy to guide our determined capybara through the ever-evolving puzzle landscapes. Don't worry if you're new to puzzle games—Capy Puzzle features a helpful tutorial that will guide you through the basics, ensuring you're ready to tackle even the most demanding levels.
 
