@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Game/SWING/SWING_3.unity
     guid: cc81cbd304af3f24fb8b3ccafdecf6b5
+  - enabled: 1
+    path: Assets/Scene/Game/SWING/SWING_5.unity
+    guid: b869d7205bfda8f4e86ffe1b34aac41a
+  - enabled: 1
+    path: Assets/Scene/Game/SWING/SWING_7.unity
+    guid: 6c556f2ba06eea849ab8e2afcad3ce34
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 39447e9466a7114429fdd6ca051e1c9f, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 2f0387d0bd6aa75469515d4cf02cadd7, type: 2}
