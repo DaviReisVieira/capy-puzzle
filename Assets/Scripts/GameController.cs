@@ -138,7 +138,7 @@ public class GameController : BaseController
 
     public void onMenu()
     {
-        // DialogController.instance.ShowDialog(DialogType.pause, DialogShow.REPLACE_CURRENT, string.Empty);
+        DialogController.instance.ShowDialog(DialogType.pause, DialogShow.REPLACE_CURRENT, string.Empty);
     }
 
     public void onReset()
