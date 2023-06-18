@@ -16,3 +16,4 @@ MISSON_FAILED|VOCÊ FALHOU
 time|Tempo:{0}s
 LEVEL_dialog_title|Nível {0}
 gravity_guide|Coisas com esse estilo tem gravidade
+thanks_playing|Obrigado por jogar!^Novos níveis a caminho....
