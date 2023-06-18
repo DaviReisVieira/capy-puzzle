@@ -1,5 +1,7 @@
 # Capy Puzzle
 
+**Game Design Document:** https://app.milanote.com/1PUTb31Q2pAA8w/capy-puzzle
+
 Welcome to the exciting world of Capy Puzzle, a captivating game that will put your puzzle-solving skills to the test! Prepare to embark on a thrilling journey alongside our adorable and determined capybara protagonist as she strives to reach her ultimate destination—the cool, refreshing waters.
 
 As you progress through the game, the puzzles become increasingly thought-provoking. From cutting ropes to moving objects, every puzzle is a unique challenge that requires both logic and creativity to conquer.
@@ -15,3 +17,4 @@ But it's not just about solving puzzles. Capy Puzzle also rewards your efforts w
 So, are you ready to embark on an unforgettable journey with our determined Capy? 
 
 Download Capy Puzzle on Play Store now and let the captivating quest begin!
+
