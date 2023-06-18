@@ -15,3 +15,4 @@ FREE_PRIZE|FREE^PRIZE
 MISSON_FAILED|MISSON FAILED
 time|Time:{0}s
 LEVEL_dialog_title|Level {0}
+gravity_guide|Things like that has gravity
