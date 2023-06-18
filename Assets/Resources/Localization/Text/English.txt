@@ -16,3 +16,4 @@ MISSON_FAILED|MISSON FAILED
 time|Time:{0}s
 LEVEL_dialog_title|Level {0}
 gravity_guide|Things like that has gravity
+thanks_playing|Thank you for playing!^New Levels on the way....
